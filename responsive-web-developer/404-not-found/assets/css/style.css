@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@700&family=Space+Mono:wght@700&display=swap');
+
+:root {
+    --inconsolata: 'Inconsolata', monospace;
+    --space-mono: 'Space Mono', monospace;
+    --montserrat: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    padding: 1rem 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.title {
+    font-family: var(--inconsolata);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -8%;
+    line-height: 25.18px;
+    color: #333;
+}
+
+.content__image {
+    padding: 2rem 1rem;
+}
+
+.content__image img {
+    width: 100%;
+    height: auto;
+}
+
+.content__text {
+    font-family: var(--space-mono);
+}
+
+.subtitle {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 71.09px;
+    letter-spacing: -3.5%;
+    color: #333;
+}
+
+.content p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26.66px;
+    letter-spacing: -3.5%;
+    color: #4F4F4F;
+    margin: 2rem 0 4.5rem 0;
+}
+
+.btn {
+    font-family: var(--space-mono);
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 20.73px;
+    text-transform: uppercase;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+.btn:focus, .btn:hover {
+    background-color: #000;
+}
+
+.footer {
+    font-family: var(--montserrat);
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.06rem;
+    margin-top: 6rem;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.footer p, .footer a {
+    color: #BDBDBD;
+}
+
+.footer a {
+    font-style: italic;
+}
+
+.footer a:hover, .footer a:focus  {
+    text-decoration: underline;
+    color: #000;
+}
+
+@media (min-width: 50rem) {
+    
+    .header {
+        padding: 2rem 0;
+    }
+
+    .content {
+        display: flex;
+        align-items: center;
+        padding: 4rem 0;
+    }
+
+    .content__image {
+        padding: 0;
+        width: 50%;
+    }
+
+    .content__text {
+        width: 50%;
+        margin-left: 4rem;
+    }
+
+    .subtitle {
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 5.92rem;
+        letter-spacing: -3.5%;
+    }
+    
+    .content p {
+        font-size: 1.5rem;
+        line-height: 2.18rem;
+        letter-spacing: -3.5%;
+    }
+    
+    .footer {
+        font-size: 0.875rem;
+        line-height: 1.06rem;
+    }
+}
